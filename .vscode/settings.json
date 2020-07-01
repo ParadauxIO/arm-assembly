@@ -4,6 +4,7 @@
         "**/common": true,
         "**/.vscode": true,
         "**/build": true,
-        "**/Makefile": true
+        "**/Makefile": true,
+        "CSU1102x.code-workspace": true
     }
 }
