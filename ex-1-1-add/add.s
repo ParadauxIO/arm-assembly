@@ -18,7 +18,8 @@ Main:
   ADD   R0, R0, R3      @ total=total+c
   ADD   R0, R0, R4      @ total=total+d
 
-  @ Check your result
+  @ End of program ... check your result
 
+End_Main:
   BX    lr
 .size Main, .-Main

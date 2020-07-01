@@ -19,7 +19,8 @@ Main:
 
   ADD   R0, R0, R2      @ result = result + tmp
 
-  @ Check your result
+  @ End of program ... check your result
 
+End_Main:
   BX    lr
 .size Main, .-Main

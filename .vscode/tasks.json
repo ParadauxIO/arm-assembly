@@ -4,10 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Default Build",
+            "label": "Build current ARM .s file",
             "group": "build",
             "type": "shell",
             "command": "make",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
             "args": [
                 "-f",
                 "../common/Makefile"
@@ -15,13 +18,16 @@
             "problemMatcher": [
                 {
                     "owner": "arm",
-                    "fileLocation": ["relative", "${workspaceFolder}"],
+                    "fileLocation": [
+                        "relative",
+                        "${fileDirname}"
+                    ],
                     "pattern": {
-                      "regexp": "^(.*):(\\d+):\\s+(Warning|Error):\\s+(.*)$",
-                      "file": 1,
-                      "line": 2,
-                      "severity": 3,
-                      "message": 4
+                        "regexp": "^(.*):(\\d+):\\s+(Warning|Error):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "message": 4
                     }
                 }
             ]

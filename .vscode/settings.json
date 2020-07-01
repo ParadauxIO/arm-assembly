@@ -3,6 +3,7 @@
         "**/.gitignore": true,
         "**/common": true,
         "**/.vscode": true,
-        "*.code-workspace": true
+        "**/build": true,
+        "**/Makefile": true
     }
 }
