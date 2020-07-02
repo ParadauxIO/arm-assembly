@@ -5,9 +5,6 @@
   .global  Main
 
 Main:
-
-  @ First, set up to test with x=5
-  MOV   R1, #4
   
   @ Write a program to compute 4x^2+3x
   MUL   R0, R1, R1      @ result = x * x
