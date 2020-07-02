@@ -89,10 +89,10 @@ SECTIONS
   } >FLASH
   
   /* Uninitialized data section */
-  .bss :
+  .data :
   {
     . = ALIGN(4);
-    *(.bss)
+    *(.data)
     . = ALIGN(4);
   } >RAM
 }
