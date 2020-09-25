@@ -9,7 +9,10 @@
             "type": "shell",
             "command": "make",
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
+                "env": {
+                    "GCC_PATH": "${config:cortex-debug.armToolchainPath}"
+                }
             },
             "args": [
                 "-f",
