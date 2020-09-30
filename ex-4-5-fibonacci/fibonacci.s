@@ -5,7 +5,7 @@
 
 Main:
 
-  @ Calculate the nth Fibonacci number, where n is stored in R1
+  @ Calculate Fibonacci number Fn, where n is stored in R1
   @ Store the result in R0
 
   @ *** your solution goes here ***
