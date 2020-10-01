@@ -8,10 +8,10 @@
   .type     Init_Test, %function
 Init_Test:
   @ Set up a, b, c and d with initial test values
-  MOV   R1, #6          @ a=6
-  MOV   R2, #7          @ b=7
-  MOV   R3, #8          @ c=8
-  MOV   R4, #9          @ d=9
+  MOV   R1, #5          @ a=5
+  MOV   R2, #6          @ b=6
+  MOV   R3, #7          @ c=7
+  MOV   R4, #8          @ d=8
   bx    lr
 
 .end
