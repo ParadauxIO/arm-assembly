@@ -8,7 +8,7 @@
 
   .type     Init_Test, %function
 Init_Test:
-  @ Test with R0=3, R1=6
+  @ Test with R0=3 and R1=6
   MOV   R0, #3
   MOV   R1, #6
   bx    lr
