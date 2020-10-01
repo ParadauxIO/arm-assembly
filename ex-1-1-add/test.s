@@ -7,7 +7,7 @@
 
   .type     Init_Test, %function
 Init_Test:
-  @ Set up a, b, c and d with some test values
+  @ Set up a, b, c and d with initial test values
   MOV   R1, #6          @ a=6
   MOV   R2, #7          @ b=7
   MOV   R3, #8          @ c=8
