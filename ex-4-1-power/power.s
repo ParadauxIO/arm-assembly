@@ -9,11 +9,11 @@ Main:
 
   MOV     R0, #1          @ result = 1
 While:
-  CMP     R2, #0
-  BEQ     EndWh           @ while (y != 0) {
-  MUL     R0, R0, R1      @  result = result × x
-  SUB     R2, R2, #1      @  y = y - 1
-  B       While           @ }
+  CMP     R2, #0          @ Assuming R2 is equal to 0
+  BEQ     EndWh           @ If that's the case, go to the lebel EndWh:
+  MUL     R0, R0, R1      @ Multiply the result by x 
+  SUB     R2, R2, #1      @ Decrement the iterator value (y)
+  B       While           @ Go back to the start of the while loop
 EndWh:
 
   @ End of program ... check your result

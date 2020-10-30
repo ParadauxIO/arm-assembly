@@ -15,6 +15,15 @@ Main:
 
   @ *** your solution goes here ***
 
+  StartIf:
+    CMP R1, R2
+    BHS Else
+    MOV R0, R1
+    B End_Main
+  Else:
+    MOV R0, R2
+
+
   @ End of program ... check your result
 
 End_Main:

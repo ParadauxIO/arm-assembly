@@ -11,6 +11,12 @@ Main:
 
   @ End of program ... check your result
 
+  MOV R0, R1
+  CMP R0, #0
+  BGE EndIfNeg
+  RSB R0, R0, #
+  EndIfNeg:
+
 End_Main:
   BX    lr
 

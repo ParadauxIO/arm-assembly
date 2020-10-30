@@ -14,9 +14,17 @@ Main:
 
     @ ax^2
 
-    LDR R1, =0x33
-    SUB R0, R1, #0x30
+    MUL R0, R1, R1 @ x^2
+    MUL R0, R0, R2 @ ax^2
 
+    @ bx
+    MUL R5, R3, R1 
+
+    @ ax^2 + bx
+    ADD R0, R0, R5
+
+    @ ax^2 + bx + c
+    ADD R0, R0, R4 
 
 End_Main:
   BX    lr

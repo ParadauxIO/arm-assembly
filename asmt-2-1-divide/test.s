@@ -9,7 +9,7 @@
   .type     Init_Test, %function
 Init_Test:
   @ Test by dividing a=23 by b=5
-  LDR   R2, =23
+  LDR   R2, =230
   LDR   R3, =5
 
   bx    lr

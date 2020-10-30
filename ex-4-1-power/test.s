@@ -10,7 +10,7 @@
 Init_Test:
   @ Test with x=3, y=4
   MOV   R1, #3
-  MOV   R2, #4
+  MOV   R2, #0
   bx    lr
 
 .end
