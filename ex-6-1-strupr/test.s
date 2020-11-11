@@ -4,6 +4,7 @@
   .thumb
 
   .global Init_Test
+  .global strA
 
   .section  .text
 
@@ -27,13 +28,13 @@ Loop:
 
   .section  .rodata
 
-strA:
+initStrA:
   .asciz  "Hello World!"
 
 
   .section  .data
 
-RamData:
+strA:
   .space  256
 
 .end
