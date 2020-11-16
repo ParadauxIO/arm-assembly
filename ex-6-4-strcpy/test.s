@@ -11,22 +11,21 @@
 
   .type     Init_Test, %function
 Init_Test:
-  @ Set R1 to the start address of the test string
-  LDR   R0, =stringB
+
   LDR   R1, =stringA
+  LDR   R0, =stringB
   BX    LR
 
 
   .section  .rodata
 
 stringA:
-  .asciz  "This is a test!"
+  .asciz  "Hello World!"
 
 
   .section  .data
 
 stringB:
   .space  256
-
 
 .end
