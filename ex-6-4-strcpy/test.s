@@ -4,20 +4,28 @@
   .thumb
 
   .global Init_Test
-  .global strA
+  .global stringA
+  .global stringB
 
   .section  .text
 
   .type     Init_Test, %function
 Init_Test:
-  LDR   R0, =strA
-  LDR   R1, =-356
+
+  LDR   R1, =stringA
+  LDR   R0, =stringB
   BX    LR
-  
+
+
+  .section  .rodata
+
+stringA:
+  .asciz  "Hello World!"
+
 
   .section  .data
 
-strA:
+stringB:
   .space  256
 
 .end
