@@ -13,7 +13,7 @@ Main:
   @
   @ TIP: To view memory when debugging your program you can ...
   @
-  @   Add the following watch expression: (unsigned char [64]) strB
+  @   Add the following watch expression: (unsigned char [64]) stringB
   @
   @   OR
   @

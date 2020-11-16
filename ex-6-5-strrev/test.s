@@ -4,28 +4,28 @@
   .thumb
 
   .global Init_Test
-  .global strA
-  .global strB
+  .global stringA
+  .global stringB
 
   .section  .text
 
   .type     Init_Test, %function
 Init_Test:
   @ Set R1 to the start address of the test string
-  LDR   R0, =strB
-  LDR   R1, =strA
+  LDR   R0, =stringB
+  LDR   R1, =stringA
   BX    LR
 
 
   .section  .rodata
 
-strA:
+stringA:
   .asciz  "Do not test with a palindrome"
 
 
   .section  .data
 
-strB:
+stringB:
   .space  256
 
 
