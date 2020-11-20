@@ -12,8 +12,8 @@
   .type     Init_Test, %function
 Init_Test:
   @ Set R1 to the start address of the test string
-  LDR   R0, =stringB
   LDR   R1, =stringA
+  LDR   R2, =stringB
   BX    LR
 
 
