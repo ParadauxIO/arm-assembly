@@ -32,5 +32,4 @@ stringB:
 stringC:
   .asciz  "Madam, I'm Adam"
 
-
 .end

@@ -47,13 +47,13 @@ WhCpy:
   .section  .rodata
 
 init_stringA:
-  .asciz  "easts"
+  .asciz  "eVil"
 
 init_stringB:
-  .asciz  "seats"
+  .asciz  "viLe"
 
 
-  .section  .data
+  .data
 stringA:
   .space  128
 stringB:

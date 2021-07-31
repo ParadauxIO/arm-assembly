@@ -29,8 +29,7 @@ Loop:
   .section  .rodata
 
 initStrA:
-  .asciz  "HELLO world"
-
+  .asciz  "...starts With Dots"
 
   .section  .data
 

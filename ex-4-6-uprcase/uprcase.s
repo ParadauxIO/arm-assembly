@@ -27,12 +27,14 @@ Main:
     CMP R0, #90
     BLE NotUpperCase
     b End_Main
+ 
   NotUpperCase:
+
   IfLowerCase:
     CMP R0, #97
-    BGE NotALetter
-    CMP R0, #122
     BLE NotALetter
+    CMP R0, #122
+    BGE NotALetter
     SUB R0, R0, #0x20
     b End_Main
   NotALetter:

@@ -5,14 +5,14 @@
 
 Main:
 
-  @ R1 = e
-  @ if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
-  @ {
-  @ 	v = 1;
-  @ }
-  @ else {
-  @ 	v = 0;
-  @ }
+  R1 = e
+  if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+  {
+  	v = 1;
+  }
+  else {
+  	v = 0;
+  }
 
   @ *** your solution goes here ***
 

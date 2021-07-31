@@ -9,7 +9,7 @@
   .type     Init_Test, %function
 Init_Test:
   @ Test with lower case character 'g'
-  MOV   R0, #63
+  MOV   R0, #'/'
   bx    lr
 
 .end

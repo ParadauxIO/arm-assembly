@@ -18,6 +18,6 @@ Init_Test:
   .section  .rodata
 
 strA:
-  .asciz  "Hello World"  
+  .asciz  ""  
 
 .end

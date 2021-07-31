@@ -22,7 +22,7 @@ Init_Test:
   .section  .rodata           @ store original string in Read Only Memory (ROM)
 
 originalString:               @ original NULL-terminated ASCII string
-  .asciz  "TRINITY COLLEGE, DUBLIN."
+  .asciz  ".,?@TRinITy *cOLLege ,,Dublin. ."
 
 
   .section  .data             @ store new string in Random Access Memory (RAM)

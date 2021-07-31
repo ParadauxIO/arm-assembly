@@ -6,21 +6,37 @@
 
 Main:
 
-  @
-  @ write your program here
-  @
+LDR R3, =0
 
-  @
-  @ TIP: To view memory when debugging your program you can ...
-  @
-  @   Add the following watch expression: (unsigned char [64]) stringB
-  @
-  @   OR
-  @
-  @   Open a Memory View specifying the address 0x20000000 and length at least 11
-  @   You can open a Memory View with ctrl-shift-p type view memory (cmd-shift-p on a Mac)
-  @
+WhileStrLength:
+  LDRB R2, [R1]
 
+  CMP R2, #0x0
+  BEQ EndWhile
+
+  ADD R1, R1, #1
+  ADD R3, R3, #1
+
+  b WhileStrLength
+EndWhile:
+
+Move:
+  SUB R1, R1, #1
+
+  LDRB R2, [R1]
+
+  CMP R2, 0x0
+  BEQ EndMove
+
+  STRB R2, [R0]
+  
+  ADD R0, R0, #1
+
+  b Move
+EndMove:
+
+LDR R2, =0x0
+STRB R2, [R0]
   @ End of program ... check your result
 
 End_Main:

@@ -5,9 +5,9 @@
 
 Main:
 
-  @ if (ch >= 'A' && ch <= 'Z') {
-  @ 	ch = ch + 0x20;
-  @ }
+  if (ch >= 'A' && ch <= 'Z') {
+  	ch = ch + 0x20;
+  }
 
   @ *** your solution goes here ***
 

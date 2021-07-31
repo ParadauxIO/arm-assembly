@@ -5,18 +5,18 @@
 
 Main:
 
-  @ if (v < 10) {
-  @ 	a = 1;
-  @ }
-  @ else if (v < 100) {
-  @ 	a = 10;
-  @ }
-  @ else if (v < 1000) {
-  @ 	a = 100;
-  @ }
-  @ else {
-  @ 	a = 0;
-  @ }  
+  if (v < 10) {
+  	a = 1;
+  }
+  else if (v < 100) {
+  	a = 10;
+  }
+  else if (v < 1000) {
+  	a = 100;
+  }
+  else {
+  	a = 0;
+  }  
 
   @ *** your solution goes here ***
   @ V = R1
